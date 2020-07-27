@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>epic store locator</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="https://kit.fontawesome.com/c939d0e917.js"></script>
+</head>
+<body>
+	<div class="title">Store Locator</div>
+	<div class="search-container">
+		<div class="search">
+			<input id="zip-code-input" type="text" name="text" placeholder="enter zip">
+			<i class="fas fa-search" onclick="searchStores()"></i>	
+		</div>
+	</div>
+	<div class="stores-list-container">
+		<div class="stores-list">
+			<div class="stores-container">
+				<div class="stores-info-container">
+				<div class="stores-address">
+					<span>257 S.LA Cienega Blvd.</span>
+					<span>Beverly Hills, CA 90211</span>
+					</div>
+				<div class="stores-phone-number">310-659-9562</div>
+				</div>
+				<div class="stores-number-container">
+				<div class="stores-number">
+					1
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+<div id="map"></div>
+
+<script type="text/javascript" src="js/store-data.js"></script>
+<script type="text/javascript" src="js/index.js" ></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap"
+    async defer></script>
+</body>
+</html>
